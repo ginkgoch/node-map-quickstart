@@ -1,0 +1,9 @@
+{
+  "name": "quick-started-cmd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "ginkgoch-map": "^1.12.0"
+  }
+}
