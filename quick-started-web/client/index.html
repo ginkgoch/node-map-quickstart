@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css">
+    <style> html, body, #mapApp { margin: 0px; width: 100%; height: 100%; } </style>
+  </head>
+  <body>
+    <div id="mapApp"></div>
+    <script src="../node_modules/leaflet/dist/leaflet.js"></script>
+    <script>
+        let map = L.map('mapApp').setView([0, 0], 2);
+        L.tileLayer('http://localhost:5500/maps/default/{z}/{x}/{y}', {
+            attribution: '&copy; <a href="https://ginkgoch.com">Ginkgoch MAP</a> contributors'
+        }).addTo(map);
+    </script>
+  </body>
+</html>
